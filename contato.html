@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Agência de Turismo Seilatour</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>Agência de Turismo Seilatour</h1>
+    </header>
+    <nav role="navigation" aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li><a href="pacotes.html">Pacotes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main role="main">
+        <nav aria-label="Breadcrumbs">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ol>
+        </nav>
+        <section id="secform">
+            <h3>Solicite cotações e informações adicionais!</h3>
+            <form action="" method="post">
+                <fieldset class="info">
+                    <legend>Informações Pessoais:</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" name="phone" id="phone" required>
+                    <label for="age">Idade:</label>
+                    <input type="number" name="age" id="age" required>
+                    <label for="birthday">Data de Nascimento:</label>
+                    <input type="date" name="birthday" id="birthday" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Opções</legend>
+                    <label for="message">Tipo de mensagem:</label>
+                    <select name="message" id="message" required>
+                        <option value="orcamento">Orçamento</option>
+                        <option value="reclamacao">Reclamações</option>
+                        <option value="sugestao">Sugestões</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                    <label>Destino:</label>
+                    <input type="checkbox" name="acapulco" id="acapulco">
+                    <label for="acapulco">Acapulco</label>
+                    <input type="checkbox" name="miami" id="miami">
+                    <label for="miami">Miami</label>
+                    <input type="checkbox" name="ibiza" id="ibiza">
+                    <label for="ibiza">Ibiza</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Mensagem:</legend>
+                    <textarea rows="10" cols="50"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Envie aqui seus documentos:</legend>
+                    <input type="file" name="photo" id="photo" accept=".png, .jpg, .jpeg" required>
+                </fieldset>
+            </form>
+        </section>
+        <section class="nextpage">
+            <a href="index.html"><< VOLTAR AO INÍCIO >></a>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <h3>2024 - Seilatour</h3>
+    </footer>
+</body>
+</html>
